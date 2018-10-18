@@ -30,3 +30,55 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes Message-slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes Message-slide-out {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.message {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 1.2em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    animation: Message-slide-in .3s linear, Message-slide-out .3s linear 3.2s;
+}
+
+.message.error {
+    background-color: red;
+}
+
+.message.success {
+    background-color: green;
+}
+
+.users-table {
+    margin: 1em auto;
+    width: 400px;
+}
+
+.users-table th {
+    border-bottom: 2px solid #3692bc;
+    width: 1px;
+}

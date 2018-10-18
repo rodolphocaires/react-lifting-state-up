@@ -19,8 +19,8 @@ li {
 }
 
 input {
-    margin: 10px;
-    display: inline-block;
+    margin: 10px auto;
+    display: block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
